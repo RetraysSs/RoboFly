@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flybot"
+version = "0.1.0"
+description = "A robot controlled by a simulation of the real adult Drosophila connectome"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+ref = ["brian2"]          # reference simulator for validating my own (v0.2+)
+data = ["pandas", "pyarrow"]  # reading connectome tables (v0.3+)
+robot = ["pyserial"]      # host bridge (v0.6+)
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# Connectome data is not redistributed (see data/README.md)
+data/*
+!data/README.md
+
+# Experiment outputs (regenerate with the scripts in experiments/)
+results/
+*.npz
+
+# Firmware build output
+firmware/**/Debug/
+firmware/**/Release/
+firmware/**/build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
