@@ -1,6 +1,6 @@
 # data/
 
-Connectome files are **not committed** (see `.gitignore`). Download them yourself so the original sources and licences apply.
+Connectome files are **not committed** (see `.gitignore`). They are downloaded from the original sources so that the original licences and terms apply.
 
 ## Where to get the data
 
@@ -16,9 +16,9 @@ At the time of writing, the Eon repo lists files named like `2025_Completeness_7
 ```
 data/
   raw/        files exactly as downloaded
-  processed/  your own derived files (sparse matrices, subsets)
+  processed/  derived files (sparse matrices, subsets)
 ```
 
 ## Attribution
 
-When you publish results, cite Dorkenwald et al. 2024 and Schlegel et al. 2024 (see the main README).
+Published results should cite Dorkenwald et al. 2024 and Schlegel et al. 2024 (see the main README).

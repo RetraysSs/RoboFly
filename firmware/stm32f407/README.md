@@ -9,4 +9,4 @@ Starts in **v0.6**. Planned contents:
 - Packet protocol with CRC (see `docs/architecture.md` and, later, `docs/protocol.md`).
 - Safe stop on link loss.
 
-Do not start here before v0.4 has passed its decision gate unless you want a break from simulation work; the firmware track is independent of the simulator until v0.7.
+The firmware track is independent of the simulator until v0.7 and can run in parallel with v0.3-v0.5. Hardware purchases wait for the v0.4 decision gate.

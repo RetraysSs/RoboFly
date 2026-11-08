@@ -1,6 +1,6 @@
 # Glossary
 
-Short, plain definitions for terms used in this project. Add your own as you learn.
+Short, plain definitions of terms used in this project.
 
 - **Connectome:** a wiring diagram of a nervous system: which neuron connects to which, and how many synapses. A static structure, not a running brain.
 - **FlyWire:** the consortium and data set that produced the adult *Drosophila* whole-brain connectome (about 139,000 neurons, over 50 million synapses).

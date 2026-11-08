@@ -30,7 +30,7 @@ Rule: if a part carries the project's claim or my learning goal, I write it. If 
 
 The Shiu et al. model code and the Eon Systems fly-brain repo are read to understand the method. Code is not pasted into this repository; if an idea is borrowed it is credited in the relevant dev log entry.
 
-## Optional "go deeper" tasks
+## Possible extensions
 
 - Replace HAL calls in the firmware with direct register access for one peripheral.
 - Write a CRC-16 table-driven and bitwise version and compare speed on the MCU.

@@ -2,7 +2,7 @@
 
 A small wheeled robot whose "brain" is the **real wiring diagram of an adult fruit fly** (the FlyWire connectome), run as a spiking-neuron simulation on a PC. A microcontroller (STM32F407) does the real-time sensing and motor control and talks to the simulation over a custom protocol. A small learned readout layer lets the robot adapt over time while the connectome itself stays fixed.
 
-> **Status:** `v0.1` in progress. See [ROADMAP.md](ROADMAP.md) for what each version builds and what to study for it.
+> **Status:** `v0.1` in progress. See [ROADMAP.md](ROADMAP.md) for the scope and background material of each version.
 
 ## What this project is (and is not)
 
@@ -50,7 +50,7 @@ More detail: [docs/architecture.md](docs/architecture.md).
 | v0.8 | Learning on the real robot, control experiments | Connectome vs random-network comparison |
 | v1.0 | Write-up and release | Video, report, limitations |
 
-Details, study material and acceptance criteria for each version are in [ROADMAP.md](ROADMAP.md).
+Scope, background material and acceptance criteria for each version are in [ROADMAP.md](ROADMAP.md).
 
 ## Repository layout
 
