@@ -35,6 +35,10 @@ I_th = (v_th - v_rest) / r_m = (-50 - (-70)) / 10 = 2 nA
 
 My first explanation was that the potential did not reach the threshold "within 5000 steps". That was wrong: running longer does not help, the limit is the steady state, not the simulation time.
 
+Simulation with `dt = 0.1 ms`:
+
+![Membrane potential for dt = 0.1 ms](../figures/v0_1_single_neuron.png)
+
 ### 2. What changes when `dt` is halved?
 
 Smaller `dt` gives a more accurate result. First spike time at 3 nA, simulated for the same 500 ms in each case:
@@ -49,11 +53,19 @@ The analytic first spike time is `tau_m * ln 3 = 21.972 ms`, so the numerical re
 
 My first comparison was flawed: I kept 5000 steps while halving `dt`, which halved the simulated duration to 250 ms. To compare fairly the number of steps must be scaled so the duration stays 500 ms.
 
+Simulation with `dt = 0.05 ms`:
+
+![Membrane potential for dt = 0.05 ms](../figures/v0_1_dt_0.05.png)
+
 ### 3. What happens with a very large `dt` (`dt = tau_m = 20 ms`)?
 
 With `dt = tau_m` the factor `dt / tau_m` in the Euler update is 1, so the potential jumps to its steady state in one step. At 3 nA that is `-70 + 30 = -40 mV`, above the threshold. The neuron spikes on every step (5000 spikes in 5000 steps, 20 ms apart), is reset, and jumps again. The model no longer charges gradually, and it can only spike once per step.
 
 In the plot the spikes are not visible. `v` only contains `-70` and `-75`, because the stored value on a spike step is `v_reset` (see the conventions above). The spikes are only visible in the `spike_times` output.
+
+Simulation with `dt = 20 ms`:
+
+![Membrane potential for dt = 20 ms](../figures/v0_1_dt_20.png)
 
 ## Mistakes and fixes
 

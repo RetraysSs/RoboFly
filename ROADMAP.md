@@ -27,7 +27,7 @@ Note: links were checked when this roadmap was written. FlyWire data file names 
 - All tests in `tests/test_lif_single.py` pass.
 - The rheobase (minimum constant current that produces a spike) is derived analytically and agrees with the simulation.
 
-![v0_1_single_neuron(normal).png](docs/figures/v0_1_single_neuron%28normal%29.png)
+![v0_1_single_neuron(normal).png](docs/figures/v0_1_single_neuron.png)
 
 ---
 

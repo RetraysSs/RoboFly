@@ -2,7 +2,7 @@
 
 A small wheeled robot whose "brain" is the **real wiring diagram of an adult fruit fly** (the FlyWire connectome), run as a spiking-neuron simulation on a PC. A microcontroller (STM32F407) does the real-time sensing and motor control and talks to the simulation over a custom protocol. A small learned readout layer lets the robot adapt over time while the connectome itself stays fixed.
 
-> **Status:** `v0.1` in progress. See [ROADMAP.md](ROADMAP.md) for the scope and background material of each version.
+> **Status:** `v0.1` complete (single LIF neuron). Next: `v0.2` (network simulator). See [ROADMAP.md](ROADMAP.md) for the scope and background material of each version.
 
 ## What this project is (and is not)
 
@@ -38,19 +38,25 @@ More detail: [docs/architecture.md](docs/architecture.md).
 
 ## Roadmap at a glance
 
-| Version | Focus | Deliverable |
-|---|---|---|
-| v0.1 | Foundations, own single-neuron LIF | Plotted membrane trace, passing tests |
-| v0.2 | Own LIF network simulator, checked against Brian2 | Matching spike rasters |
-| v0.3 | Load the FlyWire connectome, run it, benchmark it | Raster plots, speed table |
-| v0.4 | Choose input/output neurons, measure responses (**decision gate**) | Response-curve notebook |
-| v0.5 | Virtual closed loop and learned readout | Learning curve in simulation |
-| v0.6 | STM32 firmware and host bridge | Robot driven from PC, latency numbers |
-| v0.7 | Hardware-in-the-loop integration | First real closed-loop run |
-| v0.8 | Learning on the real robot, control experiments | Connectome vs random-network comparison |
-| v1.0 | Write-up and release | Video, report, limitations |
+| Version | Focus | Deliverable | Status |
+|---|---|---|---|
+| v0.1 | Foundations, own single-neuron LIF | Plotted membrane trace, passing tests | Done |
+| v0.2 | Own LIF network simulator, checked against Brian2 | Matching spike rasters | Next |
+| v0.3 | Load the FlyWire connectome, run it, benchmark it | Raster plots, speed table | Planned |
+| v0.4 | Choose input/output neurons, measure responses (**decision gate**) | Response-curve notebook | Planned |
+| v0.5 | Virtual closed loop and learned readout | Learning curve in simulation | Planned |
+| v0.6 | STM32 firmware and host bridge | Robot driven from PC, latency numbers | Planned |
+| v0.7 | Hardware-in-the-loop integration | First real closed-loop run | Planned |
+| v0.8 | Learning on the real robot, control experiments | Connectome vs random-network comparison | Planned |
+| v1.0 | Write-up and release | Video, report, limitations | Planned |
 
 Scope, background material and acceptance criteria for each version are in [ROADMAP.md](ROADMAP.md).
+
+### v0.1 result
+
+![Membrane potential of a single LIF neuron for 1 to 4 nA constant input](docs/figures/v0_1_single_neuron.png)
+
+*1 and 2 nA stay below threshold; 3 and 4 nA fire regularly, with a higher rate at 4 nA.*
 
 ## Repository layout
 
