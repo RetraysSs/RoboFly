@@ -74,7 +74,7 @@ def test_membrane_potential_never_exceeds_threshold_after_reset():
 
 
 def test_refractory_period_limits_rate():
-    t_ref = 5.0
+    t_ref = 10.0
     _, spikes = run(10.0, t_ref=t_ref)  # very strong drive
     assert len(spikes) >= 5
     assert np.min(np.diff(spikes)) >= t_ref - 1e-9
