@@ -8,7 +8,7 @@ Note: links were checked when this roadmap was written. FlyWire data file names 
 
 ---
 
-## v0.1 - Foundations and a single neuron
+## v0.1 - Foundations and a single neuron (Done)
 
 **Goal:** Implement a single leaky integrate-and-fire neuron.
 
@@ -18,14 +18,16 @@ Note: links were checked when this roadmap was written. FlyWire data file names 
 - Brian2 tutorial part 1: [Neurons](https://brian2.readthedocs.io/en/stable/resources/tutorials/1-intro-to-brian-neurons.html).
 
 **Scope**
-- [ ] Dev environment and repo working (`pytest` runs).
-- [ ] `src/flybot/lif.py`: a single LIF neuron simulator in NumPy. Spec: [tasks/v0.1-01-single-lif-neuron.md](tasks/v0.1-01-single-lif-neuron.md).
-- [ ] A script in `experiments/` that plots membrane potential and spikes for a few input currents.
-- [ ] First dev log entry in `docs/devlog/`.
+- [X] Dev environment and repo working (`pytest` runs).
+- [X] `src/flybot/lif.py`: a single LIF neuron simulator in NumPy. Spec: [tasks/v0.1-01-single-lif-neuron.md](tasks/v0.1-01-single-lif-neuron.md).
+- [X] A script in `experiments/` that plots membrane potential and spikes for a few input currents.
+- [X] First dev log entry in `docs/devlog/`.
 
 **Acceptance criteria**
 - All tests in `tests/test_lif_single.py` pass.
 - The rheobase (minimum constant current that produces a spike) is derived analytically and agrees with the simulation.
+
+![v0_1_single_neuron(normal).png](docs/figures/v0_1_single_neuron%28normal%29.png)
 
 ---
 
