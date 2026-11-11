@@ -31,7 +31,7 @@ Note: links were checked when this roadmap was written. FlyWire data file names 
 
 ---
 
-## v0.2 - Own network simulator, validated against Brian2
+## v0.2 - Own network simulator, validated against Brian2 (In progress)
 
 **Goal:** Simulate many connected neurons, and show that the simulator agrees with a trusted reference.
 
@@ -42,9 +42,10 @@ Note: links were checked when this roadmap was written. FlyWire data file names 
 - Read the model section of Shiu et al. 2024 (the neuron and synapse equations used for the whole-brain model).
 
 **Scope**
-- [ ] `src/flybot/network.py`: N-neuron LIF network with a sparse weight matrix, vectorized time stepping.
-- [ ] Poisson-spike input generator (to mimic stimulating a neuron at a fixed rate).
-- [ ] A comparison experiment: identical small random network in the custom simulator and in Brian2.
+- [ ] v0.2-01: `LIFNetwork` with vectorised update ([task](tasks/v0.2-01-network-neurons.md))
+- [ ] v0.2-02: Synapses, mutable weights, step hook ([task](tasks/v0.2-02-synapses.md))
+- [ ] v0.2-03: Poisson input and random-network raster ([task](tasks/v0.2-03-poisson-and-raster.md))
+- [ ] v0.2-04: Validation against Brian2 ([task](tasks/v0.2-04-brian2-validation.md))
 
 **Acceptance criteria**
 - Spike counts per neuron agree with Brian2 within a stated tolerance, and the tolerance and reasons for residual differences are written down.

@@ -2,7 +2,7 @@
 
 A small wheeled robot whose "brain" is the **real wiring diagram of an adult fruit fly** (the FlyWire connectome), run as a spiking-neuron simulation on a PC. A microcontroller (STM32F407) does the real-time sensing and motor control and talks to the simulation over a custom protocol. A small learned readout layer lets the robot adapt over time while the connectome itself stays fixed.
 
-> **Status:** `v0.1` complete (single LIF neuron). Next: `v0.2` (network simulator). See [ROADMAP.md](ROADMAP.md) for the scope and background material of each version.
+> **Status:** `v0.1` complete (single LIF neuron). `v0.2` (network simulator) in progress. See [ROADMAP.md](ROADMAP.md) for the scope and background material of each version.
 
 ## What this project is (and is not)
 
@@ -41,7 +41,7 @@ More detail: [docs/architecture.md](docs/architecture.md).
 | Version | Focus | Deliverable | Status |
 |---|---|---|---|
 | v0.1 | Foundations, own single-neuron LIF | Plotted membrane trace, passing tests | Done |
-| v0.2 | Own LIF network simulator, checked against Brian2 | Matching spike rasters | Next |
+| v0.2 | Own LIF network simulator, checked against Brian2 | Matching spike rasters | In progress |
 | v0.3 | Load the FlyWire connectome, run it, benchmark it | Raster plots, speed table | Planned |
 | v0.4 | Choose input/output neurons, measure responses (**decision gate**) | Response-curve notebook | Planned |
 | v0.5 | Virtual closed loop and learned readout | Learning curve in simulation | Planned |
